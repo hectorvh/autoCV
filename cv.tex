@@ -54,7 +54,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.92]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -97,32 +97,6 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -142,12 +116,11 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Hector Valdes Hurtado} \\[7.5pt]
+\href{https://github.com/hectorvh}{\raisebox{-0.05\height}\faGithub\ hectorvh} \ $|$ \ 
+\href{https://linkedin.com/in/hector-valdes}{\raisebox{-0.05\height}\faLinkedin\ hector-valdes} \ $|$ \ 
+\href{mailto:valdes.h.hector@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ valdes.h.hector@gmail.com} \ $|$ \ 
+\href{tel:+524421884018}{\raisebox{-0.05\height}\faMobile \ +52.442.188.4018} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,27 +129,89 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+I am a Mechanical and Computer Systems Engineer with dual bachelor’s degrees, experience in automation
+engineering, software development, and hardware-software integration, with a foundation in machine
+learning. I bring a unique blend of engineering expertise, customer focus, and strategic problem-solving
+skills with strong experience in collaborative, multidisciplinary environments to develop innovative solutions
+that enhance system performance, operational efficiency, and customer outcomes.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Automation Specialist Engineer - Ford Motor Company} & \hfill May 2024 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Automation tools development for hardware validation testing
+        \item[--] Conformance of test cases, requirements, test planning, and results reporting
+        \item[--] Managing development plan using scrum methodology
+        \item[--] Single-modules, subsystems, and systems scope
+        \item[--] Troubleshooting and analytics using of CAN and Ethernet communication protocols logs
+        \item[--] Communication with design engineers and Tier 1 suppliers, solving issues, following tickets in Jira
+        \item[--] Data base built for tests log and analysis tool development
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Software Developer Engineer - GE Aerospace} & \hfill Jun 2023 - May 2024 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Prognostic and Health management (DB13)
+        \item[--] Design, analysis, and implementation of requirements, test cases, diagrams, code, and test procedures
+        \item[--] Test planning, design documentation, results reporting
+        \item[--] Testing vectors development for verification process
+        \item[--] Scade (Matlab/Simulink based) software development
+        \item[--] LEAN methodology implemented with SQDC (Safety, Quality, Delivery, Customer) philosophy driven
+        \item[--] Use of IBM Synergy repository, DOORS requirements database
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Field Automation Engineer - St Louis Gear Company} & \hfill Jun 2022 - Jun 2023 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Temporary project, TN Visa holder
+        \item[--] Sequences monitoring system implementation through different line process
+        \item[--] CNC Software development, requirements, and settings updates to meet specific engineering designs
+        \item[--] High-quality standards monitoring and troubleshooting
+        \item[--] Health, Safety, Security and Environment improvement initiatives, i.e. air filtration automatic maintenance
+alert
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Software Developer Engineer - GE Aerospace} & \hfill Jun 2023 - May 2024 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developing technical and commercial initiatives of Air Pollution Control systems based on diversified Latin American industry’s requirements
+        \item[--] Products market introduction, Automotive and Aerospace Industry standards reached, achieving important milestones in Mexico
+        \item[--] General engineering of air pollution control systems, designing process sheets and engineering diagrams 
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Queen Drones 2019-Currently} & \hfill \href{https://github.com/hectorvh/QueenDrones}{Link to Demo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{An awarded project combining AI-powered UAVs and environmental monitoring technologies. Born from a research program in Colombia (2018), Queen Drones has evolved into one of the top AI projects recognized by Huawei’s Seed for the Future Program 20204 and the OpenAI Hackathon 2024 in Chile. The project integrates autonomous drones with probabilistic models and machine learning algorithms to detect, predict, and mitigate environmental hazards. Queen Drones offers real-time data insights and predictive analytics via a web platform, demonstrating its potential for disaster response and ecological conservation}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{VEX Robotics Team Leader 2016-2018} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{As a team leader, I guided the design, programming, and assembly of competitive robots, promoting collaboration, innovation, and strategic problem-solving. I was responsible for coordinating tasks, managing timelines, and ensuring the integration of hardware and software solutions to meet competition standards.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,31 +219,66 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2025 - 2027 & Data Science Master Degree at \textbf{INFOTEC} \hfill  \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+2020 - 2024 & Computer System Engineering Degree at \textbf{UVEG} \hfill \normalsize (Grade: 9.0/10.0) \\
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+2014 - 2019 & Mechanical Engineering Degree at \textbf{UAME´ex} \hfill (Grade: 8.9/10.0) \\ 
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2014 - 2017 & Mechatronic Technical Specialist at \textbf{Guillermo Marconi Institute} \hfill  (Grade: 9.0/10.0) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%	Certifications
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2024 & Azure AI Engineer AI-102 Certification by \textbf{Microsoft} \hfill  \\
+
+2024 & Azure Data Fundamentals DP-900 Certification by \textbf{Microsoft} \hfill \normalsize \\
+
+2024 & Artificial Intelligence Associated Certification by \textbf{Huawei} \hfill \\ 
+
+2024 & Cloud Computing Associated Certification by \textbf{Huawei} \hfill \\
+
+2024 & 5G Technology Associated Certification by \textbf{Huawei} \hfill \\
+
+2023 & Academic English B2 by \textbf{IELTS} \hfill \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Courses / Development Programs
+%----------------------------------------------------------------------------------------
+\section{Courses / Development Programs}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2024 & Azure Artificial Intelligence by \textbf{Microsoft} \hfill  \\
+
+2024 & Azure Data Fundamentals by \textbf{Microsoft} \hfill \normalsize \\
+
+2024 & China-AI Talent Development Program (2 stages) by \textbf{Huawei} \hfill \\ 
+
+2024 & Seeds for the future 2024 (3 modules) by \textbf{Huawei} \hfill \\
+
+2024 & Data Science with Python by \textbf{Infotec} \hfill \\
+
+2024 & Data Analytics by \textbf{Google} \hfill \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+C/C++/Python/SQL Programming Knowledge &  \normalsize{Experience in software development life cycle}\\
+Data Analysis and Machine Learning Foundations  &  \normalsize{Data-driven solutions and analytical methods}\\  
+Failure Analysis and Predictive Maintenance  &  \normalsize{Testing, troubleshooting, and predictive analytics}\\  
+Embedded Systems Integration  &  \normalsize{Hardware and software systems integration}\\  
+Applied Statistics  &  \normalsize{Knowledge building analytics models}\\  
+Project Coordination and Strategic Planning  &  \normalsize{Effectively managing timelines and milestones}\\  
+Team Leadership  &  \normalsize{Collaborative in multidisciplinary environments}\\  
+Customer-Oriented Problem Solving  &  \normalsize{Align technical solutions with business needs}\\  
+Communication Skills  &  \normalsize{Fluent in English and Spanish}\\  
+Lean Methodology  &  \normalsize{Optimizing and continuous improvement}\\  
 \end{tabularx}
 
 \vfill
