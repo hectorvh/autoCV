@@ -54,7 +54,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.92]{geometry}
+\usepackage[scale=0.90]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -79,7 +79,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{9pt}{9pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -129,25 +129,24 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-Software Developer with dual bachelor's degrees in Mechatronics and Computer Systems Engineering, specializing in Python development, data analytics, automation, cloud services, and hardware-software integration. With a strong foundation in machine learning, I excel in delivering innovative, customer-oriented solutions that drive system performance, operational efficiency, and impactful outcomes. Known for strategic problem-solving and adaptability, I thrive in collaborative, multidisciplinary, and agile environments, consistently pushing boundaries to achieve excellence.
+Dual-degreed Software and Systems Engineer with expertise in system validation, hardware/software debugging, and PC architecture, specializing in firmware, drivers, and operating systems. Proficient in Python, C/C++, and Linux OS, with extensive experience integrating and debugging software across multiple layers of technology. A proven innovator with strong problem-solving and analytical skills, recognized for impactful projects, blending machine learning and predictive analytics. Fluent in English and Spanish.
 
 %Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Automation Specialist Engineer - Ford Motor Company} & \hfill May 2024 - present \\[3.75pt]
+\textbf{ECU Validation Engineer - Ford Motor Company} & \hfill May 2024 - present \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Software development using Python, Selenium, REST APIs, web and local applications to create automation tools, improving task processing performance by up to 20 percentage
-        \item[--] LLM chat-bot implementation for internal log interpretation.
+        \item[--] Software development using Python, Selenium, REST APIs, web and local applications to create automation validation tools, improving task processing performance by up to 20 percentage
+        \item[--] Conformance Validation of SW test cases, requirements, and results reporting
         \item[--] Data base built for tests log and analysis tool development, use of Azure cloud services
         \item[--] Software documentation and use of version control systems
-        \item[--] Conformance of test cases, requirements, test planning, and results reporting
-        \item[--] Managing development plan using scrum methodology
-        \item[--] Embedded single-modules, subsystems, and systems scope
-        \item[--] Software troubleshooting and analytics of CAN and Ethernet communication protocols
-        \item[--] Communication with design engineers and Tier 1 suppliers, solving issues, following tickets in Jira
+        \item[--] Managing Software development plan using scrum methodology
+        \item[--] Managed system validation for electronic control units (ECUs) and subsystems, identifying and resolving root causes of software-hardware integration issues.
+        \item[--] Conducted hardware/software system troubleshooting and validated communication protocols (CAN, Ethernet).
+        \item[--] Follow-up SW-HW issues tickets through Jira, integration with design engineers and Tier 1 suppliers
     \end{itemize}
     \end{minipage}
 }
@@ -158,10 +157,9 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Analytic, prognostic and health management software development in Cfor embedded control system that helped reducing failure incidents by 15 percentage
-        \item[--] Design, analysis, and implementation of requirements, test cases, diagrams, code, and test procedures
-        \item[--] Test vectors planning, design documentation, results reporting implementation for verification process
-        \item[--] Scade (Matlab/Simulink based) software development
+        \item[--] Analytic, prognostic and health management software development in C++ for embedded control system that helped reducing failure incidents by 15 percentage
+        \item[--] Complete Software Development Life-cycle addressed: planning, analysis, design, implementation, verification, validation and maintenance of requirements, diagrams, code, and test cases and procedures
+        \item[--] Scade (Matlab/Simulink based) software development automating procedures
         \item[--] LEAN methodology implemented with SQDC (Safety, Quality, Delivery, Customer) philosophy driven
         \item[--] Use of IBM Synergy repository, DOORS requirements database
     \end{itemize}
@@ -174,11 +172,10 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Temporary project, TN Visa holder
-        \item[--] Process systems automation implementation in C, monitoring productivity and failures detection
-        \item[--] Field software development, requirements, and settings updates to meet specific engineering designs
-        \item[--] High-quality standards monitoring and troubleshooting
-        \item[--] Health, safety, security and environment improvement initiatives, i.e. air filtration automatic maintenance alert
+        \item[--] Process systems automation implementation in C++, monitoring productivity and failures detection
+        \item[--] Field software development and validating requirements and production specifications
+        \item[--] Root cause analysis for digital and analog device issues, ensuring compliance with high-quality standards.
+        \item[--] Health, safety, security and environment procurement, i.e. air filtration automatic maintenance
     \end{itemize}
     \end{minipage}
 }
@@ -189,9 +186,8 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developing technical and commercial initiatives of Air Pollution Control systems based on diversified Latin American industry’s requirements
-        \item[--] Products market introduction, Automotive and Aerospace Industry standards reached, achieving important milestones in Mexico
-        \item[--] General engineering of air pollution control systems, designing process sheets and engineering diagrams 
+        \item[--] Designed air pollution control systems integrating digital and analog electronics for diverse industrial applications.
+        \item[--] Introduced products into new markets, meeting aerospace and automotive industry standards.
     \end{itemize}
     \end{minipage}
 }
@@ -201,8 +197,8 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Queen Drones 2019-Currently} & \hfill \href{https://github.com/hectorvh/QueenDrones}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{An awarded project combining AI-powered UAVs and environmental monitoring technologies. Born from a research program in Colombia (2018), Queen Drones has evolved into one of the top AI projects recognized by Huawei’s Seed for the Future Program 20204 and the OpenAI Hackathon 2024 in Chile. The project integrates autonomous drones with probabilistic models and machine learning algorithms to detect, predict, and mitigate environmental hazards. Queen Drones offers real-time data insights and predictive analytics via a web platform, cloud storage services, and chat-bot service, demonstrating its potential for disaster response and ecological conservation}  \\
+\textbf{Queen Drones 2019-Currently} & \hfill \href{https://github.com/dcerdac/keepnai.git}{Link to Demo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Awarded project combining AI-powered UAVs and environmental monitoring technologies. Born from a research program in Colombia (2018), Queen Drones has evolved into one of the top AI projects recognized in 2024 by Huawei’s "Seed for the Future" and "Cloud Developer Competition", OpenAI's "Hackathon Latin America" and Intel's "Accelerating Mexico with AI" program. The project integrates unmanned aerial vehicles, geo-informatics, probabilistic models and machine learning algorithms to detect, predict, and mitigate environmental hazards; via a web platform, cloud storage services, and chat-bot service, Queen Drones demonstrate its potential for disaster response and ecological conservation}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -215,6 +211,8 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
+2025 & Data Science Master Candidate at \textbf{Infotec} \hfill \normalsize  \\
+
 2020 - 2024 & Computer System Engineering Degree at \textbf{UVEG} \hfill \normalsize (Grade: 9.0/10.0) \\
 
 2014 - 2019 & Mechanical Engineering Degree at \textbf{UAEMéx} \hfill (Grade: 8.9/10.0) \\ 
@@ -233,9 +231,7 @@ Software Developer with dual bachelor's degrees in Mechatronics and Computer Sys
 
 2024 & Artificial Intelligence Associated Certification by \textbf{Huawei} \hfill \\ 
 
-2024 & Cloud Computing Associated Certification by \textbf{Huawei} \hfill \\
-
-2024 & 5G Technology Associated Certification by \textbf{Huawei} \hfill \\
+2024 & Cloud Computing and 5G Technology Associated Certification by \textbf{Huawei} \hfill \\
 
 2023 & Academic English B2 by \textbf{IELTS} \hfill \\
 \end{tabularx}
