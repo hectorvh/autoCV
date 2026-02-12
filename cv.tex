@@ -1,154 +1,107 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-%----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
-
-% article class because we want to fully customize the page and not use a cv template
 \documentclass[a4paper,12pt]{article}
-
-%----------------------------------------------------------------------------------------
-%	FONT
-%----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
-%other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.90]{geometry}
 
-%tabularx environment
 \usepackage{tabularx}
-
-%for lists within experience section
 \usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
-
-%to prevent spillover of tabular into next pages
 \usepackage{supertabular}
-\usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
 
-%custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{9pt}{9pt}
 
-%for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
-%Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
-%for social icons
 \usepackage{fontawesome5}
-
-%debug page outer frames
-%\usepackage{showframe}
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
-
-% non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Hector Valdes Hurtado} \\[7.5pt]
-\href{https://github.com/hectorvh}{\raisebox{-0.05\height}\faGithub\ hectorvh} \ $|$ \ 
-\href{https://linkedin.com/in/hector-valdes}{\raisebox{-0.05\height}\faLinkedin\ hector-valdes} \ $|$ \ 
-\href{mailto:valdes.h.hector@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ valdes.h.hector@gmail.com} \ $|$ \ 
+\href{https://github.com/hectorvh}{\raisebox{-0.05\height}\faGithub\ hectorvh} \ $|$ \
+\href{https://linkedin.com/in/hector-valdes}{\raisebox{-0.05\height}\faLinkedin\ hector-valdes} \ $|$ \
+\href{mailto:valdes.h.hector@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ valdes.h.hector@gmail.com} \ $|$ \
 \href{tel:+524421884018}{\raisebox{-0.05\height}\faMobile \ +52.442.188.4018} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%	SUMMARY
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
 \section{Summary}
-Dual-degreed Software and Systems Engineer with expertise in system validation, hardware/software debugging, and PC architecture, specializing in firmware, drivers, and operating systems. Proficient in Python, C/C++, and Linux OS, with extensive experience integrating and debugging software across multiple layers of technology. A proven innovator with strong problem-solving and analytical skills, recognized for impactful projects, blending machine learning and predictive analytics. Fluent in English and Spanish.
+Data Science focused Software Engineer with 5+ years of experience building reliable systems. Strong in Python and C/C++, Linux, REST APIs, web-cloud services, and end-to-end data workflows. Hands-on with predictive analytics, anomaly detection, and probabilistic/ML approaches for monitoring and risk prediction. Co-Founder of EcoVentus, a UAV + AI SaaS platform for environmental monitoring, Currently pursuing an M.Sc. in Geoinformatics and Spatial Data Science at the University of Münster. Fluent in Spanish and English.
 
-%Experience
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2025 - 2027 & M.Sc. Geoinformatics and Spatial Data Science --- \textbf{University of Münster} \\
+
+2020 - 2024 & Computer System Engineering Degree --- \textbf{UVEG} \hfill (Grade: 9.0/10.0) \\
+
+2014 - 2019 & Mechanical Engineering Degree --- \textbf{UAEMéx} \hfill (Grade: 8.9/10.0) \\
+
+2014 - 2017 & Mechatronic Technical Specialist --- \textbf{Guillermo Marconi Institute} \hfill (Grade: 9.0/10.0) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{ECU Validation Engineer - Ford Motor Company} & \hfill May 2024 - present \\[3.75pt]
+\textbf{Sales \& Marketing Representative - Liffey College (Dublin)} & \hfill Apr 2025 - Sep 2025 \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Software development using Python, Selenium, REST APIs, web and local applications to create automation validation tools, improving task processing performance by up to 20 percentage
-        \item[--] Conformance Validation of SW test cases, requirements, and results reporting
-        \item[--] Data base built for tests log and analysis tool development, use of Azure cloud services
-        \item[--] Software documentation and use of version control systems
-        \item[--] Managing Software development plan using scrum methodology
-        \item[--] Managed system validation for electronic control units (ECUs) and subsystems, identifying and resolving root causes of software-hardware integration issues.
-        \item[--] Conducted hardware/software system troubleshooting and validated communication protocols (CAN, Ethernet).
-        \item[--] Follow-up SW-HW issues tickets through Jira, integration with design engineers and Tier 1 suppliers
+        \item[--] Managed leads and enrollment funnel in a hybrid environment; supported outreach and improved lead engagement through clear value communication.
+        \item[--] Coordinated with academic teams to ensure smooth on-boarding and consistent student support.
     \end{itemize}
-    \end{minipage}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{ECU Validation Engineer - Ford Motor Company} & \hfill May 2024 - Mar 2025 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Built Python-based automation (Selenium, REST APIs, web/local apps) to accelerate validation workflows and reduce manual effort.
+        \item[--] Created structured test-log datasets and reporting pipelines for analysis; supported data-driven debugging and faster root-cause identification.
+        \item[--] Performed conformance validation of test cases and requirements; reporting and traceability.
+        \item[--] Troubleshot ECU SW/HW integration issues and validated communication protocols.
+        \item[--] Used cloud services for data storage and tools; maintained documentation and version control.
+    \end{itemize}
+\end{minipage}
 }
 \end{tabularx}
 
@@ -157,13 +110,11 @@ Dual-degreed Software and Systems Engineer with expertise in system validation, 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Analytic, prognostic and health management software development in C++ for embedded control system that helped reducing failure incidents by 15 percentage
-        \item[--] Complete Software Development Life-cycle addressed: planning, analysis, design, implementation, verification, validation and maintenance of requirements, diagrams, code, and test cases and procedures
-        \item[--] Scade (Matlab/Simulink based) software development automating procedures
-        \item[--] LEAN methodology implemented with SQDC (Safety, Quality, Delivery, Customer) philosophy driven
-        \item[--] Use of IBM Synergy repository, DOORS requirements database
+        \item[--] Developed analytics/prognostics/health-management software in C++ for embedded control systems (predictive maintenance and monitoring signals).
+        \item[--] Applied structured SDLC: requirements, design, implementation, verification/validation, and maintenance of test artifacts.
+        \item[--] Automated procedures and contributed to continuous improvement using LEAN SQDC practices.
     \end{itemize}
-    \end{minipage}
+\end{minipage}
 }
 \end{tabularx}
 
@@ -172,12 +123,10 @@ Dual-degreed Software and Systems Engineer with expertise in system validation, 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Process systems automation implementation in C++, monitoring productivity and failures detection
-        \item[--] Field software development and validating requirements and production specifications
-        \item[--] Root cause analysis for digital and analog device issues, ensuring compliance with high-quality standards.
-        \item[--] Health, safety, security and environment procurement, i.e. air filtration automatic maintenance
+        \item[--] Implemented automation systems in C++ with monitoring signals for productivity and failure detection.
+        \item[--] Conducted root-cause analysis for digital/analog device issues and software validation.
     \end{itemize}
-    \end{minipage}
+\end{minipage}
 }
 \end{tabularx}
 
@@ -186,91 +135,81 @@ Dual-degreed Software and Systems Engineer with expertise in system validation, 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Designed air pollution control systems integrating digital and analog electronics for diverse industrial applications.
-        \item[--] Introduced products into new markets, meeting aerospace and automotive industry standards.
+        \item[--] Designed air-pollution control systems for industrial applications.
+        \item[--] Supported product introduction into new markets.
     \end{itemize}
-    \end{minipage}
+\end{minipage}
 }
 \end{tabularx}
 
-%Projects
-\section{Projects}
+%----------------------------------------------------------------------------------------
+%	CORE SKILLS (DATA SCIENCE / ML FIRST)
+%----------------------------------------------------------------------------------------
+\section{Core Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Machine Learning & \normalsize{Supervised learning, anomaly detection, model evaluation} \\
+Data Science & \normalsize{Data cleaning, statistics foundations, dashboards/insights, KPI definition} \\
+Geospatial Analytics & \normalsize{Geospatial data layers; raster/vector concepts; geodatabases} \\
+Cloud \& MLOps & \normalsize{Azure services, Git, containerization, model deployment} \\
+Systems Debugging & \normalsize{Linux, HW/SW troubleshooting, protocol validation, test automation} \\
+Project Management & \normalsize{Agile/Scrum, roadmap planning, documentation, risk/issue tracking} \\
+Leadership & \normalsize{Team coordination, stakeholder communication, mentoring, cross-functional work} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS (ML / DS EMPHASIS)
+%----------------------------------------------------------------------------------------
+\section{Selected Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Queen Drones 2019-Currently} & \hfill \href{https://github.com/dcerdac/keepnai.git}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Awarded project combining AI-powered UAVs and environmental monitoring technologies. Born from a research program in Colombia (2018), Queen Drones has evolved into one of the top AI projects recognized in 2024 by Huawei’s "Seed for the Future" and "Cloud Developer Competition", OpenAI's "Hackathon Latin America" and Intel's "Accelerating Mexico with AI" program. The project integrates unmanned aerial vehicles, geo-informatics, probabilistic models and machine learning algorithms to detect, predict, and mitigate environmental hazards; via a web platform, cloud storage services, and chat-bot service, Queen Drones demonstrate its potential for disaster response and ecological conservation}  \\
+\textbf{BeEye (Wildfire Early-Warning \& Risk Nowcasting Platform)} & \hfill \href{https://github.com/hectorvh/beeye.git}{github link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+Geospatial AI platform for wildfire monitoring and early-warning, combining UAV/sensor inputs with contextual geodata to support detection, risk scoring, and operational response. Emphasis on data pipelines, spatio-temporal analytics, and interpretable ML signals for decision support.} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{VEX Robotics Team Leader 2016-2018} & \hfill \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{As a team leader, I guided the design, programming, and assembly of competitive robots, promoting collaboration, innovation, and strategic problem-solving. I was responsible for coordinating tasks, managing timelines, and ensuring the integration of hardware and software solutions to meet competition standards.}  \\
+\textbf{HoneyRoute (Pollination Intelligence Platform)} & \hfill \href{https://github.com/hectorvh/honey-route.git}{github link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+Data-driven platform for pollination services across greenhouses, orchards, and open-field crops, integrating environmental and crop context data to estimate suitability and identify areas needing support. Focus on analytics workflows, KPI-driven insights, and geospatial modeling foundations.} \\
 \end{tabularx}
 
+
+
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%	AWARDS
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2025 & Data Science Master Candidate at \textbf{Infotec} \hfill \normalsize  \\
-
-2020 - 2024 & Computer System Engineering Degree at \textbf{UVEG} \hfill \normalsize (Grade: 9.0/10.0) \\
-
-2014 - 2019 & Mechanical Engineering Degree at \textbf{UAEMéx} \hfill (Grade: 8.9/10.0) \\ 
-
-2014 - 2017 & Mechatronic Technical Specialist at \textbf{Guillermo Marconi Institute} \hfill  (Grade: 9.0/10.0) \\
+\section{Awards}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2025 & Intel \textit{Acelerando a México con IA} --- \textbf{2nd Place} \\
+2025 & Huawei Developer Competition LATAM --- \textbf{2nd Place} \\
+2024 & Huawei Developer Competition LATAM --- \textbf{2nd Place} \\
+2024 & Intel \textit{Acelerando a México con IA} --- \textbf{Top 10} \\
+2024 & Huawei Seeds for the Future --- \textbf{Top 10} \\
 \end{tabularx}
 
+
 %----------------------------------------------------------------------------------------
-%	Certifications
+%	CERTIFICATIONS
 %----------------------------------------------------------------------------------------
 \section{Certifications}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2024 & Azure AI Engineer AI-102 Certification by \textbf{Microsoft} \hfill  \\
-
-2024 & Azure Data Fundamentals DP-900 Certification by \textbf{Microsoft} \hfill \normalsize \\
-
-2024 & Artificial Intelligence Associated Certification by \textbf{Huawei} \hfill \\ 
-
-2024 & Cloud Computing and 5G Technology Associated Certification by \textbf{Huawei} \hfill \\
-
-2023 & Academic English B2 by \textbf{IELTS} \hfill \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2024 & Azure AI Engineer AI-102 Certification --- \textbf{Microsoft} \\
+2024 & Azure Data Fundamentals DP-900 Certification --- \textbf{Microsoft} \\
+2024 & Artificial Intelligence Associate Certification --- \textbf{Huawei} \\
+2024 & Cloud Computing and 5G Technology Associate Certification --- \textbf{Huawei} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	Courses / Development Programs
+%	COURSES / DEVELOPMENT PROGRAMS
 %----------------------------------------------------------------------------------------
 \section{Courses / Development Programs}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2024 & Azure Artificial Intelligence by \textbf{Microsoft} \hfill  \\
-
-2024 & Azure Data Fundamentals by \textbf{Microsoft} \hfill \normalsize \\
-
-2024 & China-AI Talent Development Program (2 stages) by \textbf{Huawei} \hfill \\ 
-
-2024 & Seeds for the future 2024 (3 modules) by \textbf{Huawei} \hfill \\
-
-2024 & Data Science with Python by \textbf{Infotec} \hfill \\
-
-2024 & Data Analytics by \textbf{Google} \hfill \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-C/C++/Python/SQL Programming Knowledge &  \normalsize{Experience in software development life cycle}\\
-REST APIs knowledge &  \normalsize{Use of Azure cloud and OpenAI services}\\
-Linux OS &  \normalsize{Application testing, and debugging}\\
-Data Analysis and Machine Learning Foundations  &  \normalsize{Data-driven solutions and analytical methods}\\  
-Failure Analysis and Predictive Maintenance  &  \normalsize{Testing, troubleshooting, and predictive analytics}\\  
-Embedded and Web Systems Integration  &  \normalsize{Hardware and software systems integration}\\  
-Applied Statistics  &  \normalsize{Knowledge building analytics models}\\  
-Project Coordination and Strategic Planning  &  \normalsize{Effectively managing timelines and milestones}\\    
-Customer-Oriented Problem Solving  &  \normalsize{Align technical solutions with business needs}\\  
-Communication Skills  &  \normalsize{Fluent in English and Spanish}\\  
-Lean Methodology  &  \normalsize{Optimizing and continuous improvement}\\  
+2024 & Data Science with Python --- \textbf{Infotec} \\
+2024 & Data Analytics --- \textbf{Google} \\
+2024 & Azure Artificial Intelligence --- \textbf{Microsoft} \\
+2024 & Azure Data Fundamentals --- \textbf{Microsoft} \\
+2024 & China-AI Talent Development Program (2 stages) --- \textbf{Huawei} \\
+2024 & Seeds for the Future (3 modules) --- \textbf{Huawei} \\
 \end{tabularx}
-
 
 \end{document}
